@@ -94,8 +94,7 @@ def solve_part_a():
                 prefix_set.add(get_phone_prefix(called_number))
 
             elif called_number.find(" "):
-                mobile_number = called_number.split(" ")
-                mobile_prefix = mobile_number[0]
+                mobile_prefix = called_number[0:4]
                 prefix_set.add(mobile_prefix)
 
             else:
